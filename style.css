@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(rm222batch3-mind-03.jpg);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.main-btn{
+    /* border: 2px solid red; */
+    margin: 200px;
+    padding: 20px;
+    display: block;    
+    /* justify-content: center; */
+    text-align: center;
+
+}
+.main-btn h1{
+    font-weight: 400;
+}
+.btns{
+    padding: 10px;
+    margin: 2px;
+}
+.btn {
+    padding: 20px;
+    width: 25%;
+    font-weight: 600;
+    background-color: rgb(188, 228, 238);
+    
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 20px;
+}

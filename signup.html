@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(rm222batch3-mind-03.jpg);
+            text-align: center;
+            margin-top: 5%;
+            padding: 20px;
+            display: block;
+            /* border: 2px solid red; */
+        }
+
+        .heading {
+            font-family: sans-serif;
+            font-size: 22px;
+            margin: 4px;
+            padding: 4px;
+        }
+
+        .btn {
+            width: 210px;
+            margin: 4px;
+            padding: 8px;
+            border-radius: 6px;
+        }
+
+        .box {
+            border-radius: 6px;
+            padding: 10px;
+            font-size: 15px;
+            background-color: rgb(240, 233, 233);
+        }
+
+        .formerror {
+            /* border: 2px solid red; */
+            margin-bottom: 1px;
+            margin-right: 100px;
+            margin-top: 1px;
+            padding: 4px;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="login.html" method="post" name="myForm" onsubmit="return validateForm()">
+        <div class="formdesign heading" id="name" >
+            Name <br><input type="text" class="box"  name="fname" placeholder="Full Name" required> <br> <b> <span class="formerror"></span></b><br>
+        </div>
+
+        <div class="formdesign heading" id="phone">
+            Ph.Number <br><input type="tel" name="fphone" maxlength="10" placeholder="123-236-4569"
+                class="box"><br>
+            <b><span class="formerror"></span> </b> <br>
+        </div>
+        <div class="formdesign heading" id="pass">
+            Password <br><input type="password" name="fpass" class="box" placeholder="doMain@012" minlength="6" maxlength="24"><br>
+            <b><span class="formerror"></span></b> <br>
+        </div>
+
+        <div class="formdesign heading" id="gender">Gender <br>
+            <input type="radio" class="g-radio" name="gender" id="male"> Male
+            <input type="radio" class="g-radio" name="gender" id="female"> Female
+            <input type="radio" class="g-radio" name="gender" id="others"> Others
+            <br>
+        </div>
+        <div class="formdesign heading" id="dob">D.O.B <br>
+            <input type="date" class="box"> <br>
+        </div>
+        <input type="submit" value="SignUp" class="btn">
+    </form>
+    <!-- <script>
+        var name=document.getElementById("name");
+        var phone=document.getElementById("phone");
+        var pass=document.getElementById("pass");
+        function validateForm(){
+            return true;
+        }
+    </script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* border: 2px solid red; */
+            text-align: center;
+            margin-top: 5%;
+            padding: 20px;
+            background-image: url(rm222batch3-mind-03.jpg);
+            /* font-size: 15px; */
+        }
+        h1{
+            margin: 8px;
+        }
+        .heading{
+         font-family: sans-serif;
+         font-size: 22px;
+         margin: 4px;
+         padding:4px;
+        }
+        .btn{
+            width: 210px;
+            margin: 4px;
+            padding:8px ;
+            border-radius: 6px;
+        }
+        .box{
+            border-radius: 6px;
+            padding: 10px;
+            font-size: 15px;
+            background-color: rgb(240, 233, 233);
+        }
+        .tick{
+            font-size: 50px;
+            margin: 4px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>LogIn </h1>
+    <form action="todolist.html" onsubmit="return validform" method="post">
+        <label class="heading">User ID</label> <br>
+        <input type="tel" id="userid" class="box" maxlength="6" minlength="6" placeholder="123456"><br>
+        <label for="password" class="heading">Password</label> <br>
+        <input type="password" id="userpass" class="box" maxlength="14" minlength="6" placeholder="doMain@123">
+        <br>
+        <input type="checkbox" class="tick">Forget password? <br>
+        <input type="submit" class="btn" value="LogIn">
+
+    </form>
+    <script>
+        let userid=document.getElementById("userid")
+        let userpass=document.getElementById("userpass")
+        function validform(){
+            if(username.value==""||password.value==""){
+                alert("No blanks allowed");
+                return false;
+            }
+            else{
+                true;
+            }
+        }
+</script>
+</body>
+</html>
